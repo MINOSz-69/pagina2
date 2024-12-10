@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Cargo Fleet Solution</title>
+  <style>
+    /* Estilos globales */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1c1c1c, #333);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Contenedor principal */
+    .login-container {
+      width: 400px;
+      padding: 40px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 8px 30px rgba(0, 255, 204, 0.4);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-container h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00ffcc;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #00ffcc, #009999);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .login-container label {
+      display: block;
+      font-size: 1.1rem;
+      color: #00ffcc;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 25px;
+      border: none;
+      border-radius: 12px;
+      background: rgba(0, 255, 204, 0.15);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .login-container input:focus {
+      background: rgba(0, 255, 204, 0.3);
+      box-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+      transform: translateY(-2px);
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #00ffcc, #009999);
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0, 255, 204, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .login-container button:hover {
+      background: linear-gradient(135deg, #009999, #00ffcc);
+      box-shadow: 0 12px 30px rgba(0, 255, 204, 0.7);
+      transform: translateY(-3px);
+    }
+
+    .signup-link {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #00ffcc;
+    }
+
+    .signup-link a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .signup-link a:hover {
+      color: #009999;
+    }
+
+    /* Efectos de transiciones */
+    .login-container input,
+    .login-container button {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .login-container input:focus,
+    .login-container button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Estilos para los enlaces */
+    .signup-link a:active {
+      color: #006666;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Registro</h1>
+    <form action="center.html" method="GET">
+      <label for="new-username">Nuevo Usuario</label>
+      <input type="text" id="new-username" name="new-username" placeholder="Ingresa un nuevo usuario" required>
+      <label for="new-password">Nueva Contraseña</label>
+      <input type="password" id="new-password" name="new-password" placeholder="Ingresa una nueva contraseña" required>
+      <button type="submit">Registrarse</button>
+    </form>
+    <div class="signup-link">
+      ¿Ya tienes cuenta? <a href="ander.html">Inicia sesión</a>
+    </div>
+  </div>
+</body>
+</html>
